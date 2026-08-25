@@ -2,7 +2,7 @@
 
 Oficiální dokumentace, uživatelské manuály, příručky pro dispečink i řidiče a technická architektura pro systém **Bručounkova garáž**.
 
-🌐 **Živá nápověda:** [napoveda.brucounkovagaraz.cz](https://napoveda.brucounkovagaraz.cz)  
+🌐 **Nápověda:** [napoveda.brucounkovagaraz.cz](https://napoveda.brucounkovagaraz.cz)  
 🚀 **Aplikace dispečinku:** [app.brucounkovagaraz.cz](https://app.brucounkovagaraz.cz)
 
 ---

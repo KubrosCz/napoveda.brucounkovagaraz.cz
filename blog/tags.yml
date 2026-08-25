@@ -1,0 +1,14 @@
+novinky:
+  label: Novinky
+  permalink: /novinky
+  description: Zprávy a oznámení o nových funkcích systému Bručounkova garáž
+
+verze:
+  label: Verze & Aktualizace
+  permalink: /verze
+  description: Přehled verzí a technických aktualizací
+
+dispecink:
+  label: Dispečink
+  permalink: /dispecink
+  description: Informace a provozní pokyny pro dispečerský tým

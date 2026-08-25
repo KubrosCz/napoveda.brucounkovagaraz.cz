@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700;800;900&display=swap');
+
+/**
+ * Custom design system & theme matching Bručounkova Garáž web interface
+ */
+
+:root {
+  /* Brand Primary: Deep Navy */
+  --ifm-color-primary: #004a99;
+  --ifm-color-primary-dark: #00428a;
+  --ifm-color-primary-darker: #003e82;
+  --ifm-color-primary-darkest: #00346f;
+  --ifm-color-primary-light: #0d5bb0;
+  --ifm-color-primary-lighter: #1664b8;
+  --ifm-color-primary-lightest: #2d7ad1;
+
+  /* Brand Secondary / Accent: Taxi Amber Gold */
+  --garaz-accent: #feb71a;
+  --garaz-accent-hover: #ffc444;
+  --garaz-accent-dark: #d99600;
+  --garaz-accent-subtle: #fff6e0;
+
+  /* Backgrounds & Surfaces */
+  --ifm-background-color: #f4fafd;
+  --ifm-background-surface-color: #ffffff;
+  --garaz-surface-subtle: #e8eff1;
+  --garaz-surface-card: rgba(255, 255, 255, 0.85);
+  --garaz-border-color: #dce4e8;
+
+  /* Typography */
+  --ifm-font-family-base: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --ifm-heading-font-family: 'Montserrat', system-ui, -apple-system, sans-serif;
+  --ifm-heading-font-weight: 700;
+  --ifm-font-size-base: 16px;
+  --ifm-line-height-base: 1.65;
+  --ifm-code-font-size: 92%;
+
+  /* Layout & Navigation */
+  --ifm-navbar-background-color: rgba(255, 255, 255, 0.92);
+  --ifm-navbar-shadow: 0 4px 20px -2px rgba(0, 52, 111, 0.08);
+  --ifm-navbar-height: 4.2rem;
+  --ifm-footer-background-color: #0b131f;
+
+  /* Cards & Shadows */
+  --garaz-card-shadow: 0 10px 30px -5px rgba(0, 52, 111, 0.07), 0 4px 10px -2px rgba(0, 52, 111, 0.04);
+  --garaz-card-shadow-hover: 0 20px 40px -10px rgba(0, 52, 111, 0.15), 0 8px 16px -4px rgba(254, 183, 26, 0.2);
+  --garaz-radius-sm: 8px;
+  --garaz-radius-md: 14px;
+  --garaz-radius-lg: 20px;
+  --garaz-radius-pill: 9999px;
+
+  --docusaurus-highlighted-code-line-bg: rgba(0, 74, 153, 0.1);
+}
+
+/* Dark Mode */
+[data-theme='dark'] {
+  --ifm-color-primary: #ffba2c;
+  --ifm-color-primary-dark: #f5ab13;
+  --ifm-color-primary-darker: #e69e0b;
+  --ifm-color-primary-darkest: #be8100;
+  --ifm-color-primary-light: #ffc44a;
+  --ifm-color-primary-lighter: #ffca5c;
+  --ifm-color-primary-lightest: #ffdc91;
+
+  --garaz-accent: #feb71a;
+  --garaz-accent-hover: #ffc444;
+  --garaz-accent-dark: #b87f00;
+  --garaz-accent-subtle: rgba(254, 183, 26, 0.12);
+
+  --ifm-background-color: #080e18;
+  --ifm-background-surface-color: #101a28;
+  --garaz-surface-subtle: #172437;
+  --garaz-surface-card: rgba(16, 26, 40, 0.85);
+  --garaz-border-color: #1e314b;
+
+  --ifm-navbar-background-color: rgba(8, 14, 24, 0.9);
+  --ifm-navbar-shadow: 0 4px 25px -2px rgba(0, 0, 0, 0.5);
+  --ifm-footer-background-color: #050910;
+
+  --garaz-card-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.4);
+  --garaz-card-shadow-hover: 0 20px 40px -10px rgba(0, 0, 0, 0.6), 0 0 20px rgba(254, 183, 26, 0.15);
+
+  --docusaurus-highlighted-code-line-bg: rgba(255, 186, 44, 0.15);
+}
+
+/* Global Reset & Typography */
+body {
+  letter-spacing: -0.01em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ifm-heading-font-family);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+/* Glassmorphism Navbar */
+.navbar {
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--garaz-border-color);
+  transition: all 0.3s ease;
+}
+
+.navbar__brand {
+  font-family: var(--ifm-heading-font-family);
+  font-weight: 800;
+  font-size: 1.15rem;
+  letter-spacing: -0.03em;
+  color: var(--ifm-color-primary-darkest);
+}
+
+[data-theme='dark'] .navbar__brand {
+  color: #ffffff;
+}
+
+.navbar__title {
+  font-weight: 800;
+}
+
+.navbar__link {
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: var(--garaz-radius-sm);
+  transition: all 0.2s ease;
+}
+
+.navbar__link:hover {
+  background-color: var(--garaz-accent-subtle);
+  color: var(--ifm-color-primary);
+}
+
+/* Garáž App CTA Button in Navbar */
+.navbar-garaz-btn {
+  background: linear-gradient(135deg, #feb71a 0%, #f39c12 100%) !important;
+  color: #161d1f !important;
+  font-weight: 700 !important;
+  border-radius: var(--garaz-radius-pill) !important;
+  padding: 0.45rem 1.15rem !important;
+  box-shadow: 0 4px 12px rgba(254, 183, 26, 0.35) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.navbar-garaz-btn:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 18px rgba(254, 183, 26, 0.5) !important;
+  text-decoration: none !important;
+}
+
+/* Sidebar Modernization */
+.theme-doc-sidebar-container {
+  border-right: 1px solid var(--garaz-border-color) !important;
+}
+
+.menu__link {
+  font-size: 0.93rem;
+  border-radius: var(--garaz-radius-sm);
+  padding: 0.45rem 0.8rem;
+  font-weight: 500;
+  transition: all 0.15s ease;
+}
+
+.menu__link--active {
+  background-color: var(--garaz-accent-subtle) !important;
+  color: var(--ifm-color-primary) !important;
+  font-weight: 700 !important;
+  border-left: 3px solid var(--garaz-accent);
+}
+
+[data-theme='dark'] .menu__link--active {
+  color: var(--garaz-accent) !important;
+  background-color: rgba(254, 183, 26, 0.12) !important;
+  border-left: 3px solid var(--garaz-accent);
+}
+
+/* Admonitions (Alerts / Callouts) Styling */
+.alert {
+  border-radius: var(--garaz-radius-md) !important;
+  border: 1px solid transparent !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.alert--info {
+  background-color: #ebf5ff !important;
+  border-color: #bcd9fd !important;
+  color: #00346f !important;
+}
+
+[data-theme='dark'] .alert--info {
+  background-color: rgba(0, 74, 153, 0.2) !important;
+  border-color: rgba(45, 122, 209, 0.35) !important;
+  color: #9bbdff !important;
+}
+
+.alert--warning {
+  background-color: #fff9eb !important;
+  border-color: #ffe08a !important;
+  color: #7d5700 !important;
+}
+
+[data-theme='dark'] .alert--warning {
+  background-color: rgba(254, 183, 26, 0.12) !important;
+  border-color: rgba(254, 183, 26, 0.3) !important;
+  color: #ffd880 !important;
+}
+
+/* Content & Markdown Enhancements */
+.markdown h1:first-child {
+  font-size: 2.35rem;
+  margin-bottom: 1.25rem;
+  color: var(--ifm-color-primary-darkest);
+  position: relative;
+  display: inline-block;
+}
+
+[data-theme='dark'] .markdown h1:first-child {
+  color: #ffffff;
+}
+
+.markdown h1:first-child::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 50px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--garaz-accent);
+}
+
+.markdown img {
+  border-radius: var(--garaz-radius-md);
+  box-shadow: var(--garaz-card-shadow);
+  border: 1px solid var(--garaz-border-color);
+}
+
+.markdown blockquote {
+  border-left: 4px solid var(--garaz-accent);
+  background-color: var(--garaz-accent-subtle);
+  border-radius: 0 var(--garaz-radius-sm) var(--garaz-radius-sm) 0;
+  padding: 0.8rem 1.2rem;
+}
+
+/* Footer Styling */
+.footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 3.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.footer__title {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--garaz-accent);
+  margin-bottom: 1.2rem;
+}
+
+.footer__link-item {
+  font-size: 0.95rem;
+  color: #9bb0c9;
+  transition: color 0.2s ease;
+}
+
+.footer__link-item:hover {
+  color: #ffffff;
+}
+
+.footer__copyright {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 0.88rem;
+  color: #6c7f99;
+}
+
+/* Documentation Images & Zoom Styling */
+.markdown img {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
+  height: auto;
+  margin: 0.75rem 0.75rem 0.75rem 0;
+  border-radius: var(--garaz-radius-sm);
+  box-shadow: 0 4px 16px rgba(0, 52, 111, 0.08);
+  border: 1px solid var(--garaz-border-color);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: zoom-in;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+/* Flex container for side-by-side images */
+.image-row,
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 1.25rem 0;
+}
+
+.image-row img,
+.image-gallery img {
+  margin: 0;
+}
+
+.markdown img:hover {
+  box-shadow: 0 8px 24px rgba(0, 52, 111, 0.14);
+}
+
+.medium-zoom-overlay {
+  z-index: 999;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.medium-zoom-image--opened {
+  z-index: 1000;
+  border-radius: var(--garaz-radius-md);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* UI Button Badges & <kbd> styling in docs */
+kbd,
+.btn-ui {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.18rem 0.55rem;
+  font-family: inherit;
+  font-size: 0.86em;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--ifm-color-primary-darkest);
+  background-color: var(--garaz-surface-subtle);
+  border: 1px solid var(--garaz-border-color);
+  border-bottom: 2px solid #b6c4cf;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  white-space: nowrap;
+  vertical-align: baseline;
+  user-select: none;
+  cursor: default;
+}
+
+[data-theme='dark'] kbd,
+[data-theme='dark'] .btn-ui {
+  color: #e2e8f0;
+  background-color: #172437;
+  border-color: #2b3d56;
+  border-bottom-color: #101a28;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Primary UI Button (Modré tlačítko) */
+.btn-ui-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.18rem 0.6rem;
+  font-family: inherit;
+  font-size: 0.86em;
+  font-weight: 600;
+  line-height: 1.35;
+  color: #ffffff !important;
+  background: linear-gradient(180deg, #0d5bb0 0%, #004a99 100%);
+  border: 1px solid #003e82;
+  border-bottom: 2px solid #002855;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 74, 153, 0.25);
+  white-space: nowrap;
+  vertical-align: baseline;
+  user-select: none;
+  cursor: default;
+}
+
+/* Accent UI Button (Žluté tlačítko) */
+.btn-ui-accent {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.18rem 0.6rem;
+  font-family: inherit;
+  font-size: 0.86em;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #1a1a1a !important;
+  background: linear-gradient(180deg, #ffd359 0%, #feb71a 100%);
+  border: 1px solid #e09f0a;
+  border-bottom: 2px solid #b87f00;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(254, 183, 26, 0.3);
+  white-space: nowrap;
+  vertical-align: baseline;
+  user-select: none;
+  cursor: default;
+}

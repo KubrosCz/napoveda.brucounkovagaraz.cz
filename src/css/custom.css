@@ -276,6 +276,18 @@ h1, h2, h3, h4, h5, h6 {
   color: #6c7f99;
 }
 
+.footer__copyright a {
+  color: inherit !important;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.18);
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.footer__copyright a:hover {
+  color: #ffffff !important;
+  text-decoration-color: var(--garaz-accent);
+}
+
 /* Documentation Images & Zoom Styling */
 .markdown img {
   display: inline-block;

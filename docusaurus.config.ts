@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Bručounkova garáž',
-  tagline: 'Znalostní báze, manuály a nápověda pro dispečink i řidiče',
+  tagline: 'Znalostní databáze, manuály a nápověda pro dispečink i řidiče',
   favicon: 'img/favicon.ico',
 
 
@@ -167,7 +167,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `© ${new Date().getFullYear()} Bručounkova garáž • Inteligentní správa flotily a dispečinku pro Poctivá flotila`,
+      copyright: `© ${new Date().getFullYear()} Bručounkova garáž • Inteligentní správa flotily a dispečinku pro <a href="https://poctiva-flotila.cz" target="_blank" rel="noopener noreferrer">Poctivá flotila</a> • Vyrobil <a href="https://www.kubros.cz" target="_blank" rel="noopener noreferrer">KuBros Solutions s.r.o.</a>`,
     },
     prism: {
       theme: prismThemes.github,

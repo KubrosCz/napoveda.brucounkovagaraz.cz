@@ -1,8 +1,8 @@
 ---
 slug: spusteni-nove-verze-garaze
 title: Spuštění nové verze systému Bručounkova garáž
-authors: [dispecink]
-tags: [novinky, verze, dispecink]
+authors: [kubros]
+tags: [novinky, verze, vyvoj]
 ---
 
 Dnes jsme oficiálně nasadili novou verzi systému **Bručounkova garáž** pro správu flotily, digitálních předávacích protokolů a plánování směn.

@@ -1,5 +1,11 @@
 dispecink:
   name: Dispečink Taxi Bručounek
-  title: Tým podpory a správy flotily
-  url: http://localhost:3001
+  title: Správa flotily
+  url: https://www.brucounek.cz
   image_url: /img/icon.png
+
+kubros:
+  name: KuBros Solutions s.r.o.
+  title: Tým podpory a vývoje
+  url: https://www.kubros.cz
+  image_url: /img/kubros_logo.png

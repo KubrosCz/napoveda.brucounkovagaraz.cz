@@ -4,7 +4,7 @@ title: Flotila
 description: Seznam všech vozidel, jejich stav a historie vozidel.
 ---
 
-# 🚗 Flotila
+#🚗 Flotila
 Modul flotila slouží ke kompletní správě vozového parku. Umožňuje přidávání, editaci vozidel, prohlížení detailů o vozidle a protokolů o předání vozidla. Dále pak zprostředkovává přístup k detailním informacím o vozidle, jako jsou technické protokoly, protokoly o předání vozidla, kihy jízd a další.
 
 ---
@@ -57,11 +57,42 @@ Pokud není stisknuto tlačítko <kbd>Vytvořit a uložit vozidlo</kbd> tak se v
 Nyní je vozidlo úspěšně přidáno do naší flotily a můžeme jej vidět v seznamu všech vozidel.
 ![Vozidlo přidáno](/img/web/02_flotila/flotila_005.png)
 :::tip Nevidíte nové vozidlo?
-Pokud se vám nezobrazilo vozidlo v seznamu všech vozidel, obnovte kartu stistknutím tlačítka obnovit ![Obnovit](/img/web/02_flotila/flotila_006.png) a vozidlo se následně objeví v seznamu všech vozidel.
+Pokud se vám nezobrazilo vozidlo v seznamu všech vozidel, obnovte kartu stistknutím tlačítka obnovit a vozidlo se následně objeví v seznamu všech vozidel. ![Obnovit](/img/web/02_flotila/flotila_006.png)
 :::
 
 ## Editace vozidel
-Pro editaci vozidla je nejprve nutné vyhledat dané vozidlo v seznamu všech vozidel v modulu Flotila a otevřít si [kartu vozidla](#karta-vozidla).  
-![Editace vozidel](/img/web/02_flotila/flotila_001.png)
-
+Pro editaci vozidla je nejprve nutné vyhledat dané vozidlo v seznamu všech vozidel v modulu Flotila a otevřít si [kartu vozidla](#karta-vozidla). Pro zobrazení **karty vozidla** stačí kliknouk kdekoliv v na daném řádku.
+![Editace vozidel](/img/web/02_flotila/flotila_007.png)  
+**V kartě vozidla** se ve vrchní části zobrazují nejduležitější infomrmace, včetně tlačítka <kbd>Upravit vozidlo</kbd>. Po jeho stisknutí se otevře okno, ve kterém můžete upravit základní inforamce o vozidle.
+![Editace vozidel](/img/web/02_flotila/flotila_008.png)  
+ Pokud chcete uložit změny stačí kliknout na tlačítko <kbd>Uložit změny vozidla</kbd>
+ ![Editace vozidel](/img/web/02_flotila/flotila_009.png)  
+:::info Kde najdu termíny?
+Pokud hledáte termíny pro výměnu oleje, rozvodů atd, naleznete je v sekci [**Termíny**](#terminy)
+:::
 ## Karta vozidla
+### Přehled
+Karta vozidla je detailí přehled všech inforamcí o vozidle. Od kinhy jízd přes předávácí protokoly až po dokumenty k vozu. Vše je rozděleno podle sekcí, ke kterým přisupujete pomocí menu horizontální menu lišty.
+![Karta vozdila - přehled](/img/web/02_flotila/flotila_010.png)  
+:::tip
+Pokud se u vozidla nachází nějaké problémy nebo události, které potřebují rešit, přímo na menu liště vidíte počet problému u dané katerorie a navíc velké upozornění přímo na přehledu v kartě vozidla.
+![Karta vozdila - detail upozornění](/img/web/02_flotila/flotila_011.png)  
+:::
+#### Průměný denní nájezd
+V přehledu máme rychlou informaci, kolik dané vozidlo denně v průměru ujede kilometrů. Systém tento údaj vypočitává dle zápisu v [knize jízd](#kniha-jizd).  
+![Karta vozdila - PDN](/img/web/02_flotila/flotila_012.png)  
+
+#### Průměrná spotřeba PMH
+Další informací je průměrná spotřeba vozu. Tento údaj se počitá na základně zadaných informací o tankovaní a počtu ujetých kilometrů mezi tankováním. Tento údaj nemusí zcela odpovídat realitě avšak má orientační výpovědní hodnotu.
+![Karta vozdila - PS](/img/web/02_flotila/flotila_013.png)  
+
+#### Reporty a dokumenty
+Zde můžeme rychle vygenerovat PDF dokument, ve kterém jsou všechny dostupné informace o vozidle a například sdílet se servisem, stanicí technické kontroly popřípadě s úřady.
+![Karta vozdila - PDF](/img/web/02_flotila/flotila_014.png)  
+
+#### Náhled knihy jízd
+
+#### Posledních 10 řidičů
+
+
+### Kniha jízd

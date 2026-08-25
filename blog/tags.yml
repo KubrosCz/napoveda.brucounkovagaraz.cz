@@ -12,3 +12,8 @@ dispecink:
   label: Dispečink
   permalink: /dispecink
   description: Informace a provozní pokyny pro dispečerský tým
+
+vyvoj:
+  label: Vývoj
+  permalink: /vyvoj
+  description: Informace o vývoji a technologiích systému Bručounkova garáž

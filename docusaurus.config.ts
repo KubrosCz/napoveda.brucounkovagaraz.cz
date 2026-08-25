@@ -100,12 +100,6 @@ const config: Config = {
           label: '📢 Novinky & Verze',
           position: 'left',
         },
-        {
-          href: 'https://app.brucounkovagaraz.cz',
-          label: '🚀 Vstoupit do Garáže',
-          position: 'right',
-          className: 'navbar-garaz-btn',
-        },
       ],
     },
     footer: {
@@ -136,16 +130,12 @@ const config: Config = {
           title: '🛠️ Rychlé odkazy',
           items: [
             {
-              label: 'Webový dispečink (Aplikace)',
+              label: 'Webová aplikace dispečinku',
               href: 'https://app.brucounkovagaraz.cz',
             },
             {
               label: 'Záznamy změn (Changelog)',
               to: '/blog',
-            },
-            {
-              label: 'Technická architektura',
-              to: '/docs/vyvojari/architektura',
             },
           ],
         },

@@ -245,6 +245,103 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0.8rem 1.2rem;
 }
 
+/* Dynamic Collapsible Table of Contents (TOC) on the right sidebar */
+.table-of-contents {
+  padding: 0.5rem 0 0.5rem 0.5rem;
+}
+
+.table-of-contents__link {
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: #64748b;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--garaz-radius-sm);
+  transition: all 0.2s ease;
+  display: block;
+}
+
+.table-of-contents__link:hover {
+  color: var(--ifm-color-primary);
+  background-color: rgba(0, 74, 153, 0.05);
+  text-decoration: none;
+}
+
+[data-theme='dark'] .table-of-contents__link {
+  color: #94a3b8;
+}
+
+[data-theme='dark'] .table-of-contents__link:hover {
+  color: var(--garaz-accent);
+  background-color: rgba(254, 183, 26, 0.08);
+}
+
+.table-of-contents__link--active {
+  color: var(--ifm-color-primary) !important;
+  font-weight: 700;
+  background-color: var(--garaz-accent-subtle) !important;
+}
+
+[data-theme='dark'] .table-of-contents__link--active {
+  color: var(--garaz-accent) !important;
+  background-color: rgba(254, 183, 26, 0.12) !important;
+}
+
+/* Visual chevron indicator for sections that have nested sub-levels */
+.table-of-contents li:has(> ul) > .table-of-contents__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.table-of-contents li:has(> ul) > .table-of-contents__link::after {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin-left: 0.5rem;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(-45deg); /* Chevron pointing right › */
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease;
+  opacity: 0.45;
+  flex-shrink: 0;
+}
+
+/* Rotate chevron downwards ⌄ when expanded (active or hovered) */
+.table-of-contents li:has(> ul):has(.table-of-contents__link--active) > .table-of-contents__link::after,
+.table-of-contents li:has(> ul):hover > .table-of-contents__link::after {
+  transform: rotate(45deg); /* Chevron pointing down ⌄ */
+  opacity: 0.9;
+}
+
+/* Accordion: Collapse nested TOC subheadings by default */
+.table-of-contents ul {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+  transform: translateY(-3px);
+  transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.25s ease,
+              transform 0.25s ease,
+              margin 0.25s ease;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0.75rem;
+  border-left: 1px solid var(--garaz-border-color);
+}
+
+/* Expand automatically when the section (or any subitem) is active, or on hover */
+.table-of-contents li:has(.table-of-contents__link--active) > ul,
+.table-of-contents li:hover > ul {
+  max-height: 800px;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+  margin-top: 0.2rem;
+  margin-bottom: 0.35rem;
+}
+
 /* Footer Styling */
 .footer {
   border-top: 1px solid rgba(255, 255, 255, 0.08);

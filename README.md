@@ -1,43 +1,86 @@
-# Website
+# 📖 Bručounkova garáž • Znalostní báze a nápověda
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Oficiální dokumentace, uživatelské manuály, příručky pro dispečink i řidiče a technická architektura pro systém **Bručounkova garáž**.
 
-## Installation
+🌐 **Živá nápověda:** [napoveda.brucounkovagaraz.cz](https://napoveda.brucounkovagaraz.cz)  
+🚀 **Aplikace dispečinku:** [app.brucounkovagaraz.cz](https://app.brucounkovagaraz.cz)
+
+---
+
+## 🎯 Obsah nápovědy
+
+- **📱 Pro řidiče**
+  - Průvodce mobilní aplikací a první přihlášení
+  - Zahájení a ukončení směny
+  - Kontrola a předání vozidla
+- **🖥️ Pro dispečink**
+  - Správa a evidence flotily vozidel
+  - Plánování směn a přiřazování řidičů
+  - Servisní partneři, termíny STK a údržba
+- **🚗 Správa vozidel**
+  - Digitální předávací protokoly
+  - Hlášení technických závad a poškození
+  - Postup při dopravní nehodě
+- **🛠️ Pro vývojáře**
+  - Architektura systému (Next.js, Supabase, Flutter)
+  - Datový model a API integrace
+
+---
+
+## 💻 Lokální vývoj
+
+Dokumentace je postavena na frameworku [Docusaurus 3](https://docusaurus.io/) s podporou TypeScriptu, Reactu a Mermaid diagramů.
+
+### 1. Instalace závislostí
 
 ```bash
 npm install
 ```
 
-**Note**: feel free to use the package manager of your choice.
-
-## Local Development
+### 2. Spuštění lokálního serveru
 
 ```bash
 npm run start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+Web bude dostupný na adrese `http://localhost:3000/`. Změny v souborech se promítají v reálném čase (hot-reload).
 
-## Build
+### 3. Sestavení produkční verze
 
 ```bash
 npm run build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+Výsledné statické soubory se vygenerují do složky `build/`.
 
-## Deployment
+---
 
-Using SSH:
+## 🚀 Nasazení na GitHub Pages
 
-```bash
-USE_SSH=true npm run deploy
+Nasazení probíhá automaticky pomocí **GitHub Actions** při každém pushi do větve `main`.
+
+- **Repozitář:** `KubrosCz/napoveda.brucounkovagaraz.cz`
+- **Doména:** `napoveda.brucounkovagaraz.cz` (konfigurováno přes `static/CNAME`)
+- **Workflow:** `.github/workflows/deploy.yml`
+
+---
+
+## 📁 Struktura projektu
+
+```text
+├── docs/                 # Markdown dokumentace rozdělená do kapitol
+│   ├── dispecink/        # Návody pro dispečery a správu
+│   ├── ridici/           # Manuály k mobilní aplikaci pro řidiče
+│   ├── vozidla/          # Protokoly, závady a servis
+│   └── vyvojari/         # Technická dokumentace architektury
+├── blog/                 # Záznamy o verzích a novinkách (Changelog)
+├── static/               # Statické soubory (obrázky, CNAME, ikony)
+├── src/                  # Vlastní React komponenty a CSS styly
+├── docusaurus.config.ts  # Hlavní konfigurace portálu
+└── sidebars.ts           # Definice navigačního stromu
 ```
 
-Not using SSH:
+---
 
-```bash
-GIT_USER=<Your GitHub username> npm run deploy
-```
+© 2026 Bručounkova garáž • Poctivá flotila
 
-If you are using GitHub Pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

@@ -13,8 +13,7 @@ Webová aplikace **Bručounkova garáž** slouží k řízení provozu taxisluž
 ## Hlavní moduly
 
 ### Přehled
-
-   - Všechny potřebné informace na jednom místě.
+Všechny potřebné informace na jednom místě:
    - Aktivní směny.
    - Protokoly ke schválení.
    - Závady vozidel.

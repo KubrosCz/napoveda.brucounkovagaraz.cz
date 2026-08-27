@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 title: Flotila
-description: Seznam všech vozidel, jejich stav a historie vozidel.
+description: Seznam všech vozidel, jejich stav a historie.
 ---
 
 # 🚗 Flotila
@@ -151,7 +151,7 @@ Jakmile řidič po ukončení směny odešle závěrečný předávací protokol
 Po úspěšném potvrzení systém okamžitě provede záznam do knihy jízd. Zvolený způsob autorizace se propíše do sekce **Ověření řidiče** a slouží jako plnohodnotný **elektronický podpis**.
 
 #### Jak otevřít knihu jízd?
-Knihu jízd si zobrazíme tak, že na kartě daného vozu klikneme na položku <kbd>Kniha jízd</kbd> (1) a následně vybereme požadovaný měsíc (2).
+Knihu jízd si zobrazíme tak, že na kartě daného vozu klikneme na položku <kbd>Kniha jízd</kbd> ❶ a následně vybereme požadovaný měsíc ❷.
 
 ![Karta vozidla - kniha jízd](/img/web/02_flotila/flotila_018.png)  
 
@@ -245,5 +245,100 @@ Po kliknutí na <kbd>Stáhout protokol (PDF)</kbd> nebo <kbd>PDF</kbd> začně g
 :::warning Pozor
 Generovaní protokolu do PDF dokumentu může trvat i několik desítek vteřin, ve vzácných případech i minutu. Systém musí zkomprimovat všechny fotografie a následně je vložit do dokumentu a to je závislé na vytženosti serveru.
 :::
-### Poškození a závady
 
+### Poškození a závady
+V této sekci najdeme všechna nahlášená poškození a závady pro zvolený automobil. Zde také řešíme jak se bude dále s poškozením nebo závadou dít. Pokud se mezi závadami a poškozeními nachízí nějaké nové / neřešené záznamy, je velde sekce v horizontálním menu uveden počet záznamů ❶.
+
+#### Základní rozhraní
+Na teto obrazovce se nacházejí tyto ovládací prvky:
+- Tlačítko pro rychlé obnovení ❷
+- Vytvoření protokolu se závadamy pro servis ❸
+- Rychlý přehled o počtu závad a v jakém stavu jsou ❹
+- Filtrovaní a vyhledáváaní v závadách ❺
+- Zapsaná závada ❻
+- Vážnost závady nebo poškození ❼
+- Stav závady / kdy se bude řešit nebo jestli již byla vyřešna ❽
+- Místo pro psaní komentářů ❾
+- Popis nebo komentář od řidiče ❿
+- Fotodokumentace ⓫ - kliknutím si fotku zvětšíme
+
+![Karta vozidla - Poškození a závady](/img/web/02_flotila/flotila_036.png)
+
+#### Řešení nového hlášení
+Pokud máme nově nahlášene poškození, zobrazí se vždy na několika místech:
+1. Na domovské stránce **Přehled**, jak ve vrchní části ❶ tak i v kartě **Nové závady** ❷
+![Karta vozidla - Poškození a závady - nové závady](/img/web/02_flotila/flotila_037.png)
+2. V protokolu na stránce **Kontrola protokolů**
+![Karta vozidla - Poškození a závady - nové závady](/img/web/02_flotila/flotila_038.png)
+3. Také samozřejmě v **Kartě vozidla** v sekci **Poškození a závady**
+![Karta vozidla - Poškození a závady - nové závady](/img/web/02_flotila/flotila_039.png)  
+
+Po zobrazení nového hlášení, přečtení si popsaného problému a případné prohlédnutí fotodokumentace si můžeme napsat poznámku kliknutím na tlačítko <kbd>Přidat poznámku</kbd>. Následně se pole změní na editační a můžeme si zde zapsat cokiliv nás napadne.
+![Karta vozidla - Poškození a závady - nové závady](/img/web/02_flotila/flotila_040.png)  
+Jakmile máme poznámku napsanou, klikneme na tlačítko <kbd>Uložit</kbd>. Pokud poznámku ukládat nechceme, jednoduše klineme na tlačítko <kbd>Zrušit</kbd>.  
+Následně změníme **stav** nahlášeného poškození/závady. Máme na výběr tyto možnosti:
+1. **K řešení / Nová** → Základní stav nově nahlášené závady.
+2. **V řešení** → Vozidlo je například již objednáno do servisu nebo se aktivně pracuje na nápravě.
+3. **Při servisu** → Pokud se jedná o drobnost, která nevyžaduje okamžitý zásah, můžeme využít tento stav. **Systém nám připomene při plánovaní servisního termínu, že je třeba vyřešit tuto událost**
+4. **Vyřešeno / Opraveno** → Pokud je závada opravana nebo jinak vyřešená.
+
+![Karta vozidla - Poškození a závady - nové závady](/img/web/02_flotila/flotila_041.png)
+
+#### Vytvoření protokolu pro servis
+:::tip Jak usnadnit komunikaci se servisem?
+Pokud se na autě nachází více závad, nebo chceme jen servisu vše usnadnit a urychlit, můžeme si v systému vygenerovat PDF protokol, kde jsou uvedeny všechny důležité infomace.
+:::
+V **Kartě vozu** stačí přejít opět na záložku **Poškození a závady** a kliknout na <kbd>Exportovat pro servis (PDF)</kbd>
+![Karta vozidla - Poškození a závady - report pro servis](/img/web/02_flotila/flotila_042.png)
+a otevře se nám nové okno, ve kterém vybereme závady, které chceme mít v protokolu ❶ . Následně můžeme vybrat servisního partnera ❷ u kterého bude oprava probíhat. Zde máme možnost i ručně zadat jméno servisu, pokud jej nemáme uložený mezi našimi servisními partnery. A jako poslední, můžeme přidat vzkaz/poznámku ❸, která se objeví na protokolu.
+![Karta vozidla - Poškození a závady - report pro servis](/img/web/02_flotila/flotila_043.png)  
+Následně stačí kliknout na <kbd>Stáhnout servisní PDF</kbd> a během několika sekund se vygeneruje protokol pro servis a objeví se okno pro jeho uložení do počítače.
+![Karta vozidla - Poškození a závady - report pro servis](/img/web/02_flotila/flotila_044.png)
+<div className="image-row"><img src="/img/web/02_flotila/flotila_045.png" alt="Karta vozidla - Poškození a závady - report pro servis - export PDF" width="400px" /><img src="/img/web/02_flotila/flotila_046.png" alt="Karta vozidla - Poškození a závady - report pro servis PDF2" width="400px" /></div>
+
+:::tip
+Protokol můžene následně vytisknout nebo poslat pomocí emalu přímo do servisu.
+:::
+
+### Specifikace
+V této sekci najdeme základní technické informace o vozidle ❶ stejně jako Stav a status ❷, kde můžeme určovat do jaké kategorie vozidlo patří. Kategorii změníme jenduše kliknutím na rozbalovací menu ❸, kde najdeme tyto kategorie:
+1. Standart
+2. Premium
+3. Exclusive
+Po vybrání kategorie se automaticky uloží.  
+Tlačítko <kbd>Upravit specifikace</kbd> má stejnou funkci a otevírá stejné dialogové okno jako tlačítko <kbd>Upravit vozidlo.</kbd>  
+![Karta vozidla - Specifikace](/img/web/02_flotila/flotila_047.png)  
+
+:::info Jak přidat nebo změnit fotografii vozu?
+Pokud chcete přidat nebo změnit fotografii k vozu, stačí klinout na logo / existující obrázek vozu a vybrat nový.
+![Karta vozidla - Profilový obrázek vozidla](/img/web/02_flotila/flotila_048.png)  
+![Karta vozidla - Profilový obrázek vozidla](/img/web/02_flotila/flotila_049.png)
+![Karta vozidla - Profilový obrázek vozidla](/img/web/02_flotila/flotila_050.png)    
+:::
+### Termíny
+Sekce termíny slouží k hlidaní termínu, jako je například výměna oleje, platnost technické kontroly, platnost dálniční známky. Dále se v této sekci plánují návšetěvy servisu.
+#### Přehled
+Na této záložce najdeme následující infomrace:
+1. Typ termínu:
+- Výměna oleje
+- STK
+- Povinné ručení
+- Havarijní pojistka
+- Dálniční známka
+- Emisní kontorla
+- Výměna rozvodů
+- Servisní prohlídka
+- Vlastní termín
+2. Platnost:
+- Datum
+- Kilometry
+3. Servis / Partner
+4. Předpokládané náhlady
+5. Tlačítka pro upravu, smazáni  
+![Karta vozidla - Terminy - preled](/img/web/02_flotila/flotila_051.png) 
+#### Přidání nového termínu / servisu
+Nový termín nebo návštěvu servisu přidáme kliknutím na talčítko <kbd>+ Nový termín</kbd>. V novém oknně následně vybereme typ. 
+![Karta vozidla - Terminy - preled](/img/web/02_flotila/flotila_052.png) 
+:::info
+Termíny, které jsou dostupné v RSV, systém automaticky vyplní při přidávaní nového vozidla.
+:::

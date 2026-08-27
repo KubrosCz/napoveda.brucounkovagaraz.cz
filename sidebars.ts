@@ -14,6 +14,8 @@ const sidebars: SidebarsConfig = {
       },
       items: [
         'ridici/mobilni-aplikace',
+        'ridici/mobilni-aplikace-prvni-kroky',
+        'ridici/mobilni-aplikace-ui',
         'ridici/smeny',
       ],
     },

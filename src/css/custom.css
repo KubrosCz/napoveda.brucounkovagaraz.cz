@@ -446,8 +446,9 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration-color: var(--garaz-accent);
 }
 
-/* Documentation Images & Zoom Styling */
-.markdown img {
+/* Documentation Images, Videos & Zoom Styling */
+.markdown img,
+.markdown video {
   display: inline-block;
   vertical-align: top;
   max-width: 100%;
@@ -457,11 +458,14 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 4px 16px rgba(0, 52, 111, 0.08);
   border: 1px solid var(--garaz-border-color);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  cursor: zoom-in;
   image-rendering: -webkit-optimize-contrast;
 }
 
-/* Flex container for side-by-side images */
+.markdown img {
+  cursor: zoom-in;
+}
+
+/* Flex container for side-by-side images and videos */
 .image-row,
 .image-gallery {
   display: flex;
@@ -472,11 +476,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .image-row img,
-.image-gallery img {
+.image-gallery img,
+.image-row video,
+.image-gallery video {
   margin: 0;
 }
 
-.markdown img:hover {
+.markdown img:hover,
+.markdown video:hover {
   box-shadow: 0 8px 24px rgba(0, 52, 111, 0.14);
 }
 

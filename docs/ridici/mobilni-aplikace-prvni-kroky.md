@@ -62,3 +62,5 @@ Nikdy nesdělujte svůj PIN dalším osobám. Veškeré úkony v aplikaci (včet
 je povolení vypnutí optimalizace baterie pro aplikaci Bručounkova garáž - Driver.<div className="image-row"><img src="/img/aplikace/01_novy_ridic/novy_ridic_015.png" alt="Přihlašovací obrazovka - vypnutí optimalizace baterie" width="200px" /><img src="/img/aplikace/01_novy_ridic/novy_ridic_015a.png" alt="Přihlašovací obrazovka - vypnutí optimalizace baterie" width="200px" /></div>  
 #### 10. **Gratulujeme!**
 Úspěšně jste dokončili registraci a přihlášení do mobilní aplikace. Nyní jste připraveni na první směnu. <div className="image-row"><img src="/img/aplikace/01_novy_ridic/novy_ridic_016.png" alt="Přihlašovací obrazovka - hotovo" width="200px" /></div>
+
+---

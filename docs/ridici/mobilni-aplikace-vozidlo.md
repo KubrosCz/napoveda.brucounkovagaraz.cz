@@ -5,3 +5,5 @@ description: Přehled uživatelského rozhraní mobilní aplikace.
 ---
 
 # 🚕 Moje vozidlo
+
+---

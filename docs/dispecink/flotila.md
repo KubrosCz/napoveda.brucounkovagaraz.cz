@@ -17,6 +17,8 @@ Přehledová obrazovka flotily
 Systém je schopen si načíst velkou část informací o vozidle automaticky z Registru silničních vozidel (dále jen RSV). Stačí zadat VIN kód vozidla a systém si většinu údajů stáhne sám. Tuto funkci však není nutné využít, i když je v rozhraní označená hvězdičkou. 
 :::
 
+---
+
 ### Vyplnění základních údajů
 #### Krok 1: RSV vyhledávání
 Pro přidání vozidla je nutné kliknout na tlačítko <kbd>+ Přidat vozidlo</kbd> v pravém horním rohu obrazovky.  
@@ -74,6 +76,8 @@ Nyní je vozidlo úspěšně přidáno do naší flotily a zobrazuje se v seznam
 Pokud se vám nové vozidlo v seznamu ihned nezobrazilo, obnovte stránku stisknutím tlačítka pro obnovení a vozidlo se v seznamu objeví. ![Obnovit](/img/web/02_flotila/flotila_006.png)
 :::
 
+---
+
 ## Editace vozidel
 Pro editaci vozidla je nejprve nutné vyhledat dané vozidlo v seznamu v modulu Flotila a otevřít si [kartu vozidla](#karta-vozidla). Pro zobrazení **karty vozidla** stačí kliknout kdekoliv na daný řádek.
 
@@ -90,6 +94,8 @@ Pokud chcete uložit změny, stačí kliknout na tlačítko <kbd>Uložit změny 
 :::info Kde najdu termíny?
 Pokud hledáte termíny pro výměnu oleje, rozvodů atd., naleznete je v sekci [**Termíny**](#terminy).
 :::
+
+---
 
 ## Karta vozidla
 ### Přehled
@@ -131,6 +137,8 @@ Vidíme zde:
 Jako poslední sekce zde figuruje náhled **posledních 10 řidičů**, kteří s vozidlem jeli.
 
 ![Karta vozidla - náhled knihy jízd](/img/web/02_flotila/flotila_016.png)
+
+---
 
 ### Kniha jízd
 Kniha jízd je povinnou součástí agendy pro každé firemní vozidlo. V naší aplikaci se však o ruční vypisování starat nemusíte. Systém provádí zápisy zcela automaticky.
@@ -195,6 +203,8 @@ Délka generovaní PDF dokumentu může trvat i více jak 10 vteřin.
 :::
 ![Karta vozidla - kniha jízd - PDF](/img/web/02_flotila/flotila_023.png) 
 
+---
+
 ### Předávací protokoly
 Na tomto místě nalezneme všechny předávaci protokoly k vozidlu. Můžeme zde: 
 - protokoly vyhledávat ❶
@@ -245,6 +255,8 @@ Po kliknutí na <kbd>Stáhout protokol (PDF)</kbd> nebo <kbd>PDF</kbd> začně g
 :::warning Pozor
 Generovaní protokolu do PDF dokumentu může trvat i několik desítek vteřin, ve vzácných případech i minutu. Systém musí zkomprimovat všechny fotografie a následně je vložit do dokumentu, tato operace je náročná ná výpočetní výkon a momentálni zvytženosti serveru.
 :::
+
+---
 
 ### Poškození a závady
 V této sekci najdeme všechna nahlášená poškození a závady pro zvolený automobil. Zde také řešíme jak se bude dále s poškozením nebo závadou dít. Pokud se mezi závadami a poškozeními nachízí nějaké nové / neřešené záznamy, je velde sekce v horizontálním menu uveden počet záznamů ❶.
@@ -300,6 +312,8 @@ Následně stačí kliknout na <kbd>Stáhnout servisní PDF</kbd> a během něko
 Protokol můžene následně vytisknout nebo poslat pomocí emalu přímo do servisu.
 :::
 
+---
+
 ### Specifikace
 V této sekci najdeme základní technické informace o vozidle ❶ stejně jako Stav a status ❷, kde můžeme určovat do jaké kategorie vozidlo patří. Kategorii změníme jenduše kliknutím na rozbalovací menu ❸, kde najdeme tyto kategorie:
 1. Standart
@@ -315,6 +329,9 @@ Pokud chcete přidat nebo změnit fotografii k vozu, stačí klinout na logo / e
 ![Karta vozidla - Profilový obrázek vozidla](/img/web/02_flotila/flotila_049.png)
 ![Karta vozidla - Profilový obrázek vozidla](/img/web/02_flotila/flotila_050.png)    
 :::
+
+---
+
 ### Termíny
 Sekce termíny slouží k hlidaní termínu, jako je například výměna oleje, platnost technické kontroly, platnost dálniční známky. Dále se v této sekci plánují návšetěvy servisu.
 #### Přehled
@@ -343,3 +360,5 @@ Nový termín nebo návštěvu servisu přidáme kliknutím na talčítko <kbd>+
 Termíny, které jsou dostupné v RSV, systém automaticky vyplní při přidávaní nového vozidla.
 :::
 Následně vyplníme datum začátku a konce platnosti termínu.
+
+---

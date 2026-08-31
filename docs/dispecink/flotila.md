@@ -197,18 +197,18 @@ Délka generovaní PDF dokumentu může trvat i více jak 10 vteřin.
 
 ### Předávací protokoly
 Na tomto místě nalezneme všechny předávaci protokoly k vozidlu. Můžeme zde: 
-- protokoly vyhledávat (1)
-- filtrovat podle typu protokolu (2)
-- zobrazit si detail protkolu (3)
-- exportovat do PDF (4)
+- protokoly vyhledávat ❶
+- filtrovat podle typu protokolu ❷
+- zobrazit si detail protkolu ❸
+- exportovat do PDF ❹
 ![Karta vozidla - předávací protokoly](/img/web/02_flotila/flotila_024.png) 
 Zárověň na přehledu vidíme nejdůležitejší informace:
-- Typ protokolu → převzetí nebo vrácení vozu (1)
-- Řidiče, který protokol vyplňoval (2)
-- Datum a čas, kdy byl protokol potvrzen PINem nebo Biometrikou (3)
-- Stav tachometru (4)
-- Stav nádrže (5)
-- A stav schálení dokumetu (6)  
+- Typ protokolu → převzetí nebo vrácení vozu ❶
+- Řidiče, který protokol vyplňoval ❷
+- Datum a čas, kdy byl protokol potvrzen PINem nebo Biometrikou ❸
+- Stav tachometru ❹
+- Stav nádrže ❺
+- A stav schálení dokumetu ❻   
 ![Karta vozidla - předávací protokoly - UI](/img/web/02_flotila/flotila_025.png) 
 
 #### Detail & fotky
@@ -243,7 +243,7 @@ Po kliknutí na <kbd>Stáhout protokol (PDF)</kbd> nebo <kbd>PDF</kbd> začně g
 ![Karta vozidla - předávací protokoly - export](/img/web/02_flotila/flotila_033.png)
 <div className="image-row"><img src="/img/web/02_flotila/flotila_034.png" alt="Karta vozidla - předávací protokoly - export PDF2" width="400px" /><img src="/img/web/02_flotila/flotila_035.png" alt="Karta vozidla - předávací protokoly - export PDF2" width="400px" /></div>
 :::warning Pozor
-Generovaní protokolu do PDF dokumentu může trvat i několik desítek vteřin, ve vzácných případech i minutu. Systém musí zkomprimovat všechny fotografie a následně je vložit do dokumentu a to je závislé na vytženosti serveru.
+Generovaní protokolu do PDF dokumentu může trvat i několik desítek vteřin, ve vzácných případech i minutu. Systém musí zkomprimovat všechny fotografie a následně je vložit do dokumentu, tato operace je náročná ná výpočetní výkon a momentálni zvytženosti serveru.
 :::
 
 ### Poškození a závady
@@ -342,3 +342,4 @@ Nový termín nebo návštěvu servisu přidáme kliknutím na talčítko <kbd>+
 :::info
 Termíny, které jsou dostupné v RSV, systém automaticky vyplní při přidávaní nového vozidla.
 :::
+Následně vyplníme datum začátku a konce platnosti termínu.

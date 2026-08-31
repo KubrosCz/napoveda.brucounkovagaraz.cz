@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Mobilní aplikace – Přehled
+title: Mobilní aplikace
 description: Návod k instalaci, přihlášení a základnímu ovládání mobilní aplikace pro řidiče.
 ---
 
@@ -12,6 +12,6 @@ Mobilní aplikace **Bručounkova garáž - Driver** slouží řidičům k pláno
 ## První kroky
 ### Kde získam aplikaci?  
 Aplikaci získáte stažením pomocí odkazu, který je součásti emailu, který vám přijde při registraci. Více informací [zde](./mobilni-aplikace-prvni-kroky.md#2-druhý-e-mail) .
-### První přihlášení
+### [První přihlášení](./mobilni-aplikace-prvni-kroky.md#první-přihlášení-do-aplikace)
 
 ## Uživatelské rozhraní

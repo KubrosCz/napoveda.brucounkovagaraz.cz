@@ -1,6 +1,6 @@
 ---
-sidebar_position: 4
-title: Směny
+sidebar_position: 5
+title: Plánovač směn
 description: Informace o plánování směn
 ---
 

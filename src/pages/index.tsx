@@ -5,6 +5,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './index.module.css';
 
 interface HubCardItem {
@@ -59,10 +60,24 @@ const fastActions = [
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
+  const videoUrl = useBaseUrl('/img/hero_2_low.mp4');
+
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
+      <div className={styles.videoBackgroundWrapper}>
+        <video
+          className={styles.heroVideo}
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source src={videoUrl} type="video/mp4" />
+        </video>
+        <div className={styles.videoOverlay} />
+      </div>
       <div className={styles.heroGlow} />
-      <div className="container">
+      <div className={clsx('container', styles.heroContent)}>
         <div className={styles.heroBadge}>
           <span>Nápověda & Znalostní báze</span>
         </div>

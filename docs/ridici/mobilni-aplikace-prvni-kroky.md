@@ -4,7 +4,7 @@ title: První kroky
 description: Návod k instalaci, přihlášení a základnímu ovládání mobilní aplikace pro řidiče.
 ---
 
-# 📱 Mobilní aplikace pro řidiče
+# ▶️ První kroky s mobilní aplikací
 
 Mobilní aplikace **Bručounkova garáž - Driver** slouží řidičům k plánovaní směn, evidenci vozidel, předávacím protokolům, hlášení závad a jízdám. 
 
@@ -13,9 +13,9 @@ Mobilní aplikace **Bručounkova garáž - Driver** slouží řidičům k pláno
 ## Vytvoření uživatelského účtu
 
 Uživatelský učet vám bude vytvořen správcem flotily nebo dispečerem. Následně obdržíte dva e-maily: ![Ukázka e-mailů](/img/aplikace/01_novy_ridic/novy_ridic_001.png)
-### 1. První e-mail
+### 1. E-mail
 ve kterém naleznete přihlašovací údaje: ![Ukázka e-mailů](/img/aplikace/01_novy_ridic/novy_ridic_002.png)
-### 2. Druhý e-mail
+### 2. E-mail
 obsahuje instrukce pro instalaci aplikace a prvním přihlášením: ![Ukázka e-mailů](/img/aplikace/01_novy_ridic/novy_ridic_003.png)
 
 :::warning Příchozí e-maily
@@ -33,9 +33,9 @@ Vezměte na vědomí, že veškeré emaily jsou odesílány z domény **@portal.
 Objeví se vám přihlašovací obrazovka: <div className="image-row"><img src="/img/aplikace/01_novy_ridic/novy_ridic_004.png" alt="Přihlašovací obrazovka" width="200px" /></div>
 #### 2. Zadejte své **uživatelské jméno**,
 které jste obdrželi v prvním e-mailu. <div className="image-row"><img src="/img/aplikace/01_novy_ridic/novy_ridic_005.png" alt="Přihlašovací obrazovka - uživatelské jméno" width="200px" /></div>
-#### 3. Po kliknutí na tlačítko **Pokračovat →**
-se vám objeví obrazovka pro zadání ověřovacího kódu. <div className="image-row"><img src="/img/aplikace/01_novy_ridic/novy_ridic_006.png" alt="Přihlašovací obrazovka - PIN" width="200px" /></div>
-#### 4. Za několik omakžiků obdržíte **SMS** 
+#### 3. Po kliknutí na tlačítko 
+<kbd>**Pokračovat →**</kbd> se vám objeví obrazovka pro zadání ověřovacího kódu. <div className="image-row"><img src="/img/aplikace/01_novy_ridic/novy_ridic_006.png" alt="Přihlašovací obrazovka - PIN" width="200px" /></div>
+#### 4. Za několik okamžiků obdržíte SMS 
 s **8 místným ověřovacím kódem**.<div className="image-row"><img src="/img/aplikace/01_novy_ridic/novy_ridic_007.png" alt="Přihlašovací obrazovka - SMS s PIN kódem" width="200px" /></div>
 #### 5. Zadejte obdržený kód do aplikace.
 <div className="image-row"><img src="/img/aplikace/01_novy_ridic/novy_ridic_008.png" alt="Přihlašovací obrazovka - zadání PIN kódu" width="200px" /></div>

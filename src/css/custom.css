@@ -308,13 +308,13 @@ h1, h2, h3, h4, h5, h6 {
   color: #64748b;
   padding: 0.25rem 0.5rem;
   border-radius: var(--garaz-radius-sm);
-  transition: all 0.2s ease;
+  transition: all 0.15s ease;
   display: block;
 }
 
 .table-of-contents__link:hover {
   color: var(--ifm-color-primary);
-  background-color: rgba(0, 74, 153, 0.05);
+  background-color: rgba(0, 74, 153, 0.06);
   text-decoration: none;
 }
 
@@ -338,7 +338,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: rgba(254, 183, 26, 0.12) !important;
 }
 
-/* Visual chevron indicator for sections that have nested sub-levels */
+/* Chevron indicator for items with nested subheadings */
 .table-of-contents li:has(> ul) > .table-of-contents__link {
   display: flex;
   align-items: center;
@@ -354,36 +354,36 @@ h1, h2, h3, h4, h5, h6 {
   border-right: 2px solid currentColor;
   border-bottom: 2px solid currentColor;
   transform: rotate(-45deg); /* Chevron pointing right › */
-  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease;
   opacity: 0.45;
   flex-shrink: 0;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0.4s, opacity 0.2s ease 0.4s;
 }
 
-/* Rotate chevron downwards ⌄ when expanded (active or hovered) */
+/* Chevron pointing down ⌄ when active or hovered */
 .table-of-contents li:has(> ul):has(.table-of-contents__link--active) > .table-of-contents__link::after,
 .table-of-contents li:has(> ul):hover > .table-of-contents__link::after {
-  transform: rotate(45deg); /* Chevron pointing down ⌄ */
+  transform: rotate(45deg);
   opacity: 0.9;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s, opacity 0.2s ease 0s;
 }
 
-/* Accordion: Collapse nested TOC subheadings by default */
+/* Nested TOC levels: collapsed by default with exit delay */
 .table-of-contents ul {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
   pointer-events: none;
-  transform: translateY(-3px);
-  transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1),
-              opacity 0.25s ease,
-              transform 0.25s ease,
-              margin 0.25s ease;
-  margin-top: 0;
-  margin-bottom: 0;
+  transform: translateY(-2px);
+  margin: 0;
   padding-left: 0.75rem;
-  border-left: 1px solid var(--garaz-border-color);
+  border-left: 1.5px solid var(--garaz-border-color);
+  transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0.4s,
+              opacity 0.25s ease 0.4s,
+              transform 0.25s ease 0.4s,
+              margin 0.25s ease 0.4s;
 }
 
-/* Expand automatically when the section (or any subitem) is active, or on hover */
+/* Expand immediately on hover or if currently active section in document */
 .table-of-contents li:has(.table-of-contents__link--active) > ul,
 .table-of-contents li:hover > ul {
   max-height: 800px;
@@ -392,6 +392,10 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(0);
   margin-top: 0.2rem;
   margin-bottom: 0.35rem;
+  transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+              opacity 0.25s ease 0s,
+              transform 0.25s ease 0s,
+              margin 0.25s ease 0s;
 }
 
 /* Footer Styling */

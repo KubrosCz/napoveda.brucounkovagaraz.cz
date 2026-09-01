@@ -93,3 +93,41 @@ Jak už název napovídá zde se shormažďují všechny předešlé Zakázkové
 ## Ruční synchronizace
 Jak už název napovidá jedná se o ruční spuštění synchronizace aplikace se zbytkem světa. Občas se stane, že se nepovede odeslat například předávací protokol ať už kvalitou signálu nebo například chvilkového přetíženi serveru. Aplikace s tímto počítá a a všechny nesynchronizované protokoly ukládá do interní paměti telefonu. Vše je navrženo, aby se synchronizace prováděla automaticky při zapnutí aplikace a při obnově internetového připojení. Ale pokud se tak nestane, tak zde máme toto tlačítko ❶. Jeho použití je velmi jednoduché, stačí na něj kliknout a telefon provede synchronizaci. Během několika vteřin je hotovo a můžeme informační okno zavřít ❷.
 <div className="image-row"><img src="/img/aplikace/07_vice/vice_013.png" alt="Ruční synchonizace data" width="400px" /></div>
+
+---
+## Odpracované hodiny
+
+---
+
+## Nouzové kontakty
+
+---
+
+## Můj Profil
+
+### Žádost o smazání účtu a uživatelských dat  
+
+Tento návod slouží k podání žádosti o trvalé smazání uživatelského účtu a souvisejících dat z mobilní aplikace **Bručounková Garáž - Driver**, jejímž provozovatelem a správcem osobních údajů je **Jan Václavík, IČO: 74479512**. Technickým správcem a vývojářem aplikace je společnost **KuBros Solutions s.r.o., IČO: 24999393**.
+
+### Jak požádat o smazání účtu
+Pokud si přejete smazat svůj uživatelský profil a veškerá související data, postupujte následujícím způsobem:
+- Zašlete žádost z vašeho registrovaného e-mailu na adresu **ucty@brucounkovagaraz.cz** s předmětem **„Žádost o smazání účtu – Bručounková Garáž - Driver“**. V těle zprávy uveďte své uživatelské jméno / e-mail.
+
+Vaše žádost bude zpracována nejpozději do **30 dnů** od doručení. O dokončení budete informováni potvrzovacím e-mailem.
+
+### Rozsah mazaných údajů
+
+Po schválení žádosti budou trvale a nevratně odstraněny:
+* Přihlašovací údaje (e-mail, hash hesla, uživatelské ID).
+* Osobní údaje z profilu (jméno, příjmení, telefonní číslo).
+* Historie uživatelské aktivity, preference a přiřazená oprávnění.
+
+### Údaje, které mohou být uchovány
+
+Při smazání účtu dojde k odstranění přístupových údajů a profilu. Některé provozní záznamy však mohou být uchovány v archivní podobě po nezbytně nutnou dobu na základě plnění zákonných povinností provozovatele a jeho oprávněného zájmu (ochrana majetku a řešení právních nároků):
+
+* **Předávací protokoly vozidel a záznamy o převzetí:** Uchovávány po dobu **4 let** od vrácení vozidla pro účely řešení případných škodních událostí, dopravních přestupků a pojistných událostí.
+* **Evidence jízd a výkazy směn:** Uchovávány po dobu **10 let** z důvodu plnění povinností vyplývajících ze zákonných předpisů (kontrola evidence práce a podklady pro daňovou evidenci provozovatele).
+* **Systémové a bezpečnostní auditní logy:** Záznamy o systémových událostech a přístupech jsou uchovávány po dobu **5 let** za účelem zajištění stability, bezpečnosti infrastruktury a prevence zneužití.
+
+---

@@ -41,7 +41,8 @@ Aplikace zpracovává pouze údaje nezbytné pro interní evidenci směn, vozov�
 ### 3. Oprávnění vyžadovaná v zařízení
 
 Aplikace může pro své správné fungování vyžadovat přístup k vybraným funkcím vašeho zařízení:
-* **Fotoaparát a úložiště / Galerie:** Pouze pro účely pořizování a nahrávání fotografií stavu vozidla do předávacích protokolů a hlášení škod.
+* **Polohové služby (GPS – Přesná poloha na popředí i na pozadí):** Nezbytné pro přiřazení souřadnic k fotografiím pořízeným v předávacích protokolech a pro online sledování polohy vozidla dispečerem během probíhající aktivní směny řidiče. Sledování polohy je aktivní pouze po dobu trvání směny a je ukončeno spolu s jejím uzavřením.
+* **Fotoaparát a úložiště:** Pouze pro účely pořizování a nahrávání fotografií stavu vozidla do předávacích protokolů a hlášení škod.
 * **Síťová komunikace (Internet):** Pro bezpečnou synchronizaci dat mezi aplikací a interním serverem.
 
 ---

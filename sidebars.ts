@@ -65,6 +65,11 @@ const sidebars: SidebarsConfig = {
         'vyvojari/architektura',
       ],
     },
+     {
+  type: 'doc',
+  id: 'zos/zasady_ochrany_soukromi',
+  label: '🛡️ Zásady ochrany soukromí',
+}
   ],
 };
 

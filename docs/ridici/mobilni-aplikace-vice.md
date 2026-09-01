@@ -15,20 +15,20 @@ Je to velmi jednoduché. Na spodní navigační liště prostě klikněte na tla
 ![Menu Vice](/img/aplikace/07_vice/vice_001.png)  
 ## Co tam najdu?
 Celé menu je rozděleno na následující části:
-#### Zakázkové jízdy
+#### [Zakázkové jízdy](#zakázkové-jízdy-1)
 V zákazkových jízdách se nachází jízdy, které jsou mimo platformu *Bolt*. Jde tedy o jízdy, které byly objednány přímo přes dispečink.
 ![Zakázkové jízdy](/img/aplikace/zakazkove_jizdy.png)
-#### Ruční synchronizace
+#### [Ruční synchronizace](#ruční-synchronizace-1)
 ![Ruční synchronizace](/img/aplikace/rucni_synchronizace.png)
-#### Odpracované hodiny
+#### [Odpracované hodiny](#odpracované-hodiny-1)
 ![Odpracované hodiny](/img/aplikace/odpracovane_hodiny.png)
-#### Nouzové kontakty
+#### [Nouzové kontakty](#nouzové-kontakty-1)
 ![Nouzové kontakty](/img/aplikace/nouzove_kontakty.png)
-#### Můj profil
+#### [Můj profil](#můj-profil-1)
 ![Můj profil](/img/aplikace/muj_profil.png)
-#### Nápověda pro řidiče
+#### [Nápověda pro řidiče](#nápověda-pro-řidiče-1)
 ![Nápověda pro řidiče](/img/aplikace/napoveda_pro_ridice.png)
-#### O aplikaci
+#### [O aplikaci](#o-aplikaci-1)
 ![O aplikaci](/img/aplikace/o_aplikaci.png)
 
 ## Zakázkové jízdy
@@ -107,7 +107,7 @@ Jak už název napovidá jedná se o ruční spuštění synchronizace aplikace 
 
 ### Žádost o smazání účtu a uživatelských dat  
 
-Tento návod slouží k podání žádosti o trvalé smazání uživatelského účtu a souvisejících dat z mobilní aplikace **Bručounková Garáž - Driver**, jejímž provozovatelem a správcem osobních údajů je **Jan Václavík, IČO: 74479512**. Technickým správcem a vývojářem aplikace je společnost **KuBros Solutions s.r.o., IČO: 24999393**.
+Tento návod slouží k podání žádosti o trvalé smazání uživatelského účtu a souvisejících dat z mobilní aplikace **Bručounkova Garáž - Driver**, jejímž provozovatelem a správcem osobních údajů je **Jan Václavík, IČO: 74479512**. Technickým správcem a vývojářem aplikace je společnost **KuBros Solutions s.r.o., IČO: 24999393**.
 
 ### Jak požádat o smazání účtu
 Pokud si přejete smazat svůj uživatelský profil a veškerá související data, postupujte následujícím způsobem:
@@ -129,5 +129,13 @@ Při smazání účtu dojde k odstranění přístupových údajů a profilu. N�
 * **Předávací protokoly vozidel a záznamy o převzetí:** Uchovávány po dobu **4 let** od vrácení vozidla pro účely řešení případných škodních událostí, dopravních přestupků a pojistných událostí.
 * **Evidence jízd a výkazy směn:** Uchovávány po dobu **10 let** z důvodu plnění povinností vyplývajících ze zákonných předpisů (kontrola evidence práce a podklady pro daňovou evidenci provozovatele).
 * **Systémové a bezpečnostní auditní logy:** Záznamy o systémových událostech a přístupech jsou uchovávány po dobu **5 let** za účelem zajištění stability, bezpečnosti infrastruktury a prevence zneužití.
+
+---
+
+## Nápověda pro řidiče
+
+---
+
+## O Aplikaci
 
 ---

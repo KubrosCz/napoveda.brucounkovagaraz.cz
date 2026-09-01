@@ -42,12 +42,12 @@ const hubCards: HubCardItem[] = [
     badge: 'Flotila',
   },
   {
-    title: 'Technická dokumentace & API',
-    icon: '⚙️',
+    title: 'Zásady ochrany soukromí',
+    icon: '🛡️',
     description:
-      'Architektura systému, databáze Supabase, konfigurace Next.js webu, Flutter mobilní aplikace a zabezpečení dat.',
-    link: '/docs/vyvojari/architektura',
-    badge: 'Vývojáři & IT',
+      'Informace o zásadách ochrany osobních údajů a zabezpečení dat.',
+    link: '/docs/zos/zasady_ochrany_soukromi',
+    badge: 'Pro všechny',
   },
 ];
 
@@ -79,7 +79,7 @@ function HomepageHeader() {
       <div className={styles.heroGlow} />
       <div className={clsx('container', styles.heroContent)}>
         <div className={styles.heroBadge}>
-          <span>Nápověda & Znalostní báze</span>
+          <span>Nápověda & Znalostní databáze</span>
         </div>
         <Heading as="h1" className={styles.heroTitle}>
           Bručounkova <span className={styles.heroTitleHighlight}>Garáž</span>
@@ -104,7 +104,7 @@ export default function Home(): ReactNode {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title="Nápověda a znalostní báze"
+      title="Nápověda a znalostní databáze"
       description="Návody, manuály a postupy pro systém Bručounkova garáž – dispečink a mobilní aplikace pro řidiče.">
       <HomepageHeader />
       <main>

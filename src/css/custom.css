@@ -574,3 +574,12 @@ kbd,
   user-select: none;
   cursor: default;
 }
+
+/* Fix cursor for linked images and non-zoomable badges */
+.markdown a > img,
+.markdown img.no-zoom,
+.markdown a > img.medium-zoom-image,
+.markdown img.no-zoom.medium-zoom-image {
+  cursor: pointer !important;
+}
+

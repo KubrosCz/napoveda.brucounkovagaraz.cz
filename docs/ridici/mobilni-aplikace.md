@@ -12,7 +12,7 @@ V první části vývoje a při počátečním testovaní bude aplikace dostupn�
 ---
 ## [První kroky](./mobilni-aplikace-prvni-kroky.md)
 #### [Kde získam aplikaci?](./mobilni-aplikace-prvni-kroky.md)  
-Aplikaci získáte stažením z <a href="https://play.google.com/store/apps/details?id=cz.kubros.brucounek_driver" target="_blank" rel="noopener noreferrer"><img src="/img/aplikace/play_badge.png" alt="Google Play odkaz" className="no-zoom" data-zoom-off style={{ verticalAlign: 'middle', height: '24px', width: 'auto', display: 'inline-block', cursor: 'pointer' }} /></a>. Odkaz a QR kód naleznete níže nebo v emailu, který vám přijde při registraci. Více informací [zde](./mobilni-aplikace-prvni-kroky.md#2-druhý-e-mail).  
+Aplikaci získáte stažením z <a href="https://play.google.com/store/apps/details?id=cz.kubros.brucounek_driver" target="_blank" rel="noopener noreferrer"><img src="/img/aplikace/play_badge.png" alt="Google Play odkaz" className="no-zoom" data-zoom-off style={{ verticalAlign: 'middle', height: '24px', width: 'auto', display: 'inline-block', cursor: 'pointer' }} /></a>. QR kód naleznete níže nebo v emailu, který vám přijde při registraci. Více informací [zde](./mobilni-aplikace-prvni-kroky.md#2-druhý-e-mail).  
 <div className="image-row"><img src="/img/aplikace/google_play_qr.png" alt="QR Google Play" width="200px" /><img src="/img/aplikace/no_ios.png" alt="No iOS logo" width="200px" /></div>
 
 #### [První přihlášení](./mobilni-aplikace-prvni-kroky.md#první-přihlášení-do-aplikace)

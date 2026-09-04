@@ -17,9 +17,10 @@ const sidebars: SidebarsConfig = {
         'ridici/mobilni-aplikace-prvni-kroky',
         'ridici/mobilni-aplikace-ui',
         'ridici/mobilni-aplikace-prehled',
-        'ridici/mobilni-aplikace-smeny',
+        'ridici/mobilni-aplikace-planovani-smen',
         'ridici/mobilni-aplikace-vozidlo',
         'ridici/mobilni-aplikace-vice',
+        'ridici/mobilni-aplikace-zahajeni-smeny',
       ],
     },
     {
